@@ -72,6 +72,9 @@
                 VirtualizingPanel.IsVirtualizing="True"
                 VirtualizingPanel.VirtualizationMode="Recycling"
                 PreviewKeyDown="KeyboardControls_KeyDown"
+                DragDrop.DragEnter="DragDrop_PassthroughHandler"
+                DragDrop.DragLeave="DragDrop_PassthroughHandler"
+                DragDrop.DragOver="DragDrop_PassthroughHandler"
                 dd:DragDrop.IsDragSource="True"
                 dd:DragDrop.IsDropTarget="True">
                 <ListView.ContextMenu>

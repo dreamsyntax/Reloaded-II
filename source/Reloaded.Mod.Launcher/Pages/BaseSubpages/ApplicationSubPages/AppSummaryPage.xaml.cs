@@ -168,4 +168,11 @@ public partial class AppSummaryPage : ApplicationSubPage, IDisposable
 
         mod.Enabled = !mod.Enabled;
     }
+
+    private void DragDrop_PassthroughHandler(object sender, DragEventArgs e)
+    {
+        // passthrough and do nothing
+        e.Effects = DragDropEffects.Copy;
+        e.Handled = true;
+    }
 }
